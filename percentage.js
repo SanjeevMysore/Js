@@ -1,16 +1,17 @@
+var array=["Distinction!","First Class!","Second Class!","fail"]
 var per;
 function result(per){
   if(per>85){
-    return "Distinction!";
+    return array[0];
   }
   else if(per<85&& per>65){
-    return "First Class!";
+    return array[1];
   }
   else if(per<65&&per>35){
-    return "Second Class!";
+    return array[2];
   }
   else{
-   return "fail";
+   return array[3];
   }
 }
   console.log(result(90));
